@@ -722,10 +722,10 @@ PlayerSettings:
   webGLThreadsSupport: 0
   webGLDecompressionFallback: 0
   scriptingDefineSymbols:
-    Android: CROSS_PLATFORM_INPUT;MOBILE_INPUT;CF_FORCE_MOBILE_MODE
+    Android: CROSS_PLATFORM_INPUT;CF_FORCE_MOBILE_MODE;MOBILE_INPUT
     Standalone: CROSS_PLATFORM_INPUT
-    Windows Store Apps: MOBILE_INPUT;CF_FORCE_MOBILE_MODE
-    iPhone: CROSS_PLATFORM_INPUT;MOBILE_INPUT;CF_FORCE_MOBILE_MODE
+    Windows Store Apps: CF_FORCE_MOBILE_MODE;MOBILE_INPUT
+    iPhone: CROSS_PLATFORM_INPUT;CF_FORCE_MOBILE_MODE;MOBILE_INPUT
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend:
