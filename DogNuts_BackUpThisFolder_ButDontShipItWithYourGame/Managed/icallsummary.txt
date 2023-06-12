@@ -1386,6 +1386,16 @@ UnityEngine.SystemInfo::GetGraphicsFormat
 UnityEngine.SystemInfo::GetOperatingSystemFamily
 UnityEngine.SystemInfo::GetCopyTextureSupport
 UnityEngine.SystemInfo::GetGraphicsDeviceType
+UnityEngine.Terrain::get_allowAutoConnect
+UnityEngine.Terrain::get_groupingID
+UnityEngine.Terrain::SetNeighbors
+UnityEngine.Terrain::get_terrainData
+UnityEngine.Terrain::get_activeTerrains
+UnityEngine.TerrainData::GetBoundaryValue
+UnityEngine.TerrainData::GetAlphamapResolutionInternal
+UnityEngine.TerrainData::Internal_Create
+UnityEngine.TerrainData::get_size_Injected
+UnityEngine.TerrainData::get_users
 UnityEngine.TextAsset::get_bytes
 UnityEngine.TextCore.LowLevel.FontEngine::TryAddGlyphToTexture_Internal
 UnityEngine.TextCore.LowLevel.FontEngine::TryAddGlyphsToTexture_Internal
@@ -1545,6 +1555,7 @@ UnityEngine.UISystemProfilerApi::AddMarker
 UnityEngine.UISystemProfilerApi::BeginSample
 UnityEngine.UISystemProfilerApi::EndSample
 UnityEngine.UnityLogWriter::WriteStringToUnityLogImpl
+UnityEngine.Vector3::RotateTowards_Injected
 UnityEngine.Vector3::Slerp_Injected
 UnityEngine.WheelCollider::GetGroundHit
 UnityEngine.WheelCollider::get_radius
