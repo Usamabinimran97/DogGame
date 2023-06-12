@@ -1,0 +1,10 @@
+Converting script [1 / 1]	[\StarterAssets\InputSystem\StarterAssetsInputs.cs]
+	Fragments : 1
+		[ 0] : Line:   76	Other mod.	[Cursor.lockState]
+
+
+1 scripts modified!
+Overwriting actual scripts...
+	[0 / 1] from  [C:/Users/hp/OneDrive/Desktop/DogGame/CF2-Data/Script-Backups/2023-06-09-16-24\Assets-After/\StarterAssets\InputSystem\StarterAssetsInputs.cs] to [C:/Users/hp/OneDrive/Desktop/DogGame/Assets/\StarterAssets\InputSystem\StarterAssetsInputs.cs]
+
+Overwriting COMPLETED!
