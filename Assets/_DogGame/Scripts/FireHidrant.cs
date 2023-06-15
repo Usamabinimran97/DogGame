@@ -22,6 +22,7 @@ public class FireHidrant : MonoBehaviour
     {
         yield return new WaitForSecondsRealtime(animationTime);
         LevelManager.hidrantCount++;
+        UIManager.Instance.currentHidrant.text = LevelManager.hidrantCount.ToString();
         LevelManager.Instance.OnLevelClear();
         UIManager.Instance.joystick.SetActive(true);
         LevelManager.Instance.dogAnimator.SetBool(Pee, false);
