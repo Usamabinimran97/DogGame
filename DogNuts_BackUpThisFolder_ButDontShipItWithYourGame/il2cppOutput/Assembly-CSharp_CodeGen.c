@@ -204,115 +204,121 @@ extern void GameManager_Awake_m4B6E8E2AF58C95C9A2A0C4637A34AE0892CB637F (void);
 extern void GameManager__ctor_mF453CED520617BFB65C52405A964E06CF17DB368 (void);
 // 0x00000060 System.Void LevelManager::Awake()
 extern void LevelManager_Awake_m5DEB1CF05B334C6E29A91D604623C1B8401AE09C (void);
-// 0x00000061 System.Void LevelManager::OnLevelClear()
+// 0x00000061 System.Void LevelManager::Start()
+extern void LevelManager_Start_mA7A45D9D0CBA8784B87F70B204C19A2AAC234D42 (void);
+// 0x00000062 System.Void LevelManager::OnLevelClear()
 extern void LevelManager_OnLevelClear_mC07D9DC6B2A3F67751B876D69B512C9A05D78055 (void);
-// 0x00000062 System.Void LevelManager::OnLevelFail()
+// 0x00000063 System.Void LevelManager::OnLevelFail()
 extern void LevelManager_OnLevelFail_m0B9D656FA8579BA037AB1D077D42C6BD6BE349B3 (void);
-// 0x00000063 System.Void LevelManager::.ctor()
+// 0x00000064 System.Void LevelManager::OnNextButtonPressed()
+extern void LevelManager_OnNextButtonPressed_m436B5C180DC8CCDBE13B6CF2B78A1C404A85072A (void);
+// 0x00000065 System.Void LevelManager::OnRestartButtonPressed()
+extern void LevelManager_OnRestartButtonPressed_m90FF24AF08B54C24A6DD2C6C8AB1F4146C9EDAC6 (void);
+// 0x00000066 System.Void LevelManager::.ctor()
 extern void LevelManager__ctor_m97F35AC08C296B73BD7D85FFB593A7BEA61B3F92 (void);
-// 0x00000064 System.Void Levels::Awake()
+// 0x00000067 System.Void Levels::Awake()
 extern void Levels_Awake_m1C647210573D094A2BCB2236D733BA4CCBF52C31 (void);
-// 0x00000065 System.Void Levels::.ctor()
+// 0x00000068 System.Void Levels::.ctor()
 extern void Levels__ctor_mEBD74F84ADAB8AC24649E600A1540049B1950AB4 (void);
-// 0x00000066 System.Void UIManager::Awake()
+// 0x00000069 System.Void UIManager::Awake()
 extern void UIManager_Awake_m7EC364BDD53CE056E998BAB28F79998608BB16DF (void);
-// 0x00000067 System.Void UIManager::.ctor()
+// 0x0000006A System.Void UIManager::.ctor()
 extern void UIManager__ctor_mC9DC2B8984E76F424E73C1860AD4BD3DEBF6573F (void);
-// 0x00000068 System.Void StarterAssets.StarterAssetsInputs::OnMove(UnityEngine.InputSystem.InputValue)
+// 0x0000006B System.Void StarterAssets.StarterAssetsInputs::OnMove(UnityEngine.InputSystem.InputValue)
 extern void StarterAssetsInputs_OnMove_m1037EAE12A06BEF9F73CAF4A3127C6A9CF4D6532 (void);
-// 0x00000069 System.Void StarterAssets.StarterAssetsInputs::OnLook(UnityEngine.InputSystem.InputValue)
+// 0x0000006C System.Void StarterAssets.StarterAssetsInputs::OnLook(UnityEngine.InputSystem.InputValue)
 extern void StarterAssetsInputs_OnLook_m457792363F0A68571BD7A917C44B1A0B1C5D7EC4 (void);
-// 0x0000006A System.Void StarterAssets.StarterAssetsInputs::OnJump(UnityEngine.InputSystem.InputValue)
+// 0x0000006D System.Void StarterAssets.StarterAssetsInputs::OnJump(UnityEngine.InputSystem.InputValue)
 extern void StarterAssetsInputs_OnJump_m077D720656D5B78D423A5D7E0194BA2D9DE089E4 (void);
-// 0x0000006B System.Void StarterAssets.StarterAssetsInputs::OnSprint(UnityEngine.InputSystem.InputValue)
+// 0x0000006E System.Void StarterAssets.StarterAssetsInputs::OnSprint(UnityEngine.InputSystem.InputValue)
 extern void StarterAssetsInputs_OnSprint_m8FF0D36964527B10A1A14E55A9EE4025C1AFF0EF (void);
-// 0x0000006C System.Void StarterAssets.StarterAssetsInputs::MoveInput(UnityEngine.Vector2)
+// 0x0000006F System.Void StarterAssets.StarterAssetsInputs::MoveInput(UnityEngine.Vector2)
 extern void StarterAssetsInputs_MoveInput_m3553E545D85710A8A35A09A0A624E9BC348169C5 (void);
-// 0x0000006D System.Void StarterAssets.StarterAssetsInputs::LookInput(UnityEngine.Vector2)
+// 0x00000070 System.Void StarterAssets.StarterAssetsInputs::LookInput(UnityEngine.Vector2)
 extern void StarterAssetsInputs_LookInput_m5682ACA7D0052E2ACDE0EA0C3BFDB7F954F838EE (void);
-// 0x0000006E System.Void StarterAssets.StarterAssetsInputs::JumpInput(System.Boolean)
+// 0x00000071 System.Void StarterAssets.StarterAssetsInputs::JumpInput(System.Boolean)
 extern void StarterAssetsInputs_JumpInput_mE2329C36E72EBF6402D6EB5A98157D6CFB86FD3F (void);
-// 0x0000006F System.Void StarterAssets.StarterAssetsInputs::SprintInput(System.Boolean)
+// 0x00000072 System.Void StarterAssets.StarterAssetsInputs::SprintInput(System.Boolean)
 extern void StarterAssetsInputs_SprintInput_mDF94C59888EE49486AC87435D3EC2C1776045A20 (void);
-// 0x00000070 System.Void StarterAssets.StarterAssetsInputs::OnApplicationFocus(System.Boolean)
+// 0x00000073 System.Void StarterAssets.StarterAssetsInputs::OnApplicationFocus(System.Boolean)
 extern void StarterAssetsInputs_OnApplicationFocus_m461C49F2AC387B76D98B87A98BA38A0289C34EA9 (void);
-// 0x00000071 System.Void StarterAssets.StarterAssetsInputs::SetCursorState(System.Boolean)
+// 0x00000074 System.Void StarterAssets.StarterAssetsInputs::SetCursorState(System.Boolean)
 extern void StarterAssetsInputs_SetCursorState_m7D2F57E935DE40673700B1994EFA6C4BF9573D0E (void);
-// 0x00000072 System.Void StarterAssets.StarterAssetsInputs::.ctor()
+// 0x00000075 System.Void StarterAssets.StarterAssetsInputs::.ctor()
 extern void StarterAssetsInputs__ctor_m1A0CAEE3381A63077E196B7C815859617C9BCDBA (void);
-// 0x00000073 System.Void StarterAssets.UICanvasControllerInput::VirtualMoveInput(UnityEngine.Vector2)
+// 0x00000076 System.Void StarterAssets.UICanvasControllerInput::VirtualMoveInput(UnityEngine.Vector2)
 extern void UICanvasControllerInput_VirtualMoveInput_m56E41472A26B3A6B517D63844304F7196FFF449C (void);
-// 0x00000074 System.Void StarterAssets.UICanvasControllerInput::VirtualLookInput(UnityEngine.Vector2)
+// 0x00000077 System.Void StarterAssets.UICanvasControllerInput::VirtualLookInput(UnityEngine.Vector2)
 extern void UICanvasControllerInput_VirtualLookInput_m88A9B7AC7F338CFBEC98FBBBD2EC8793C1C8288E (void);
-// 0x00000075 System.Void StarterAssets.UICanvasControllerInput::VirtualJumpInput(System.Boolean)
+// 0x00000078 System.Void StarterAssets.UICanvasControllerInput::VirtualJumpInput(System.Boolean)
 extern void UICanvasControllerInput_VirtualJumpInput_m45600335B430348707B730FFA2FCB334E8D807FE (void);
-// 0x00000076 System.Void StarterAssets.UICanvasControllerInput::VirtualSprintInput(System.Boolean)
+// 0x00000079 System.Void StarterAssets.UICanvasControllerInput::VirtualSprintInput(System.Boolean)
 extern void UICanvasControllerInput_VirtualSprintInput_m80CBF3433D8C053AB55A0D3F01B26070F1799759 (void);
-// 0x00000077 System.Void StarterAssets.UICanvasControllerInput::.ctor()
+// 0x0000007A System.Void StarterAssets.UICanvasControllerInput::.ctor()
 extern void UICanvasControllerInput__ctor_m3B7626E7C92128BC984ABE40C9C250720F352017 (void);
-// 0x00000078 System.Boolean StarterAssets.ThirdPersonController::get_IsCurrentDeviceMouse()
+// 0x0000007B System.Boolean StarterAssets.ThirdPersonController::get_IsCurrentDeviceMouse()
 extern void ThirdPersonController_get_IsCurrentDeviceMouse_m5EBE0107CBD975A6178FCE2840C3D159A13C6D9C (void);
-// 0x00000079 System.Void StarterAssets.ThirdPersonController::Awake()
+// 0x0000007C System.Void StarterAssets.ThirdPersonController::Awake()
 extern void ThirdPersonController_Awake_mE08F39AEA7E4CE2E15C7828E9C24AC4CE9C487C3 (void);
-// 0x0000007A System.Void StarterAssets.ThirdPersonController::Start()
+// 0x0000007D System.Void StarterAssets.ThirdPersonController::Start()
 extern void ThirdPersonController_Start_m99AC2EAB6D2136A754B1B9B2E001732ED198D7E7 (void);
-// 0x0000007B System.Void StarterAssets.ThirdPersonController::Update()
+// 0x0000007E System.Void StarterAssets.ThirdPersonController::Update()
 extern void ThirdPersonController_Update_mAFF4B3A14DCC2D6F6C5D318C41DFC61F3EDE43C5 (void);
-// 0x0000007C System.Void StarterAssets.ThirdPersonController::LateUpdate()
+// 0x0000007F System.Void StarterAssets.ThirdPersonController::LateUpdate()
 extern void ThirdPersonController_LateUpdate_m02FBD3801F369821F2FEF5ADD8890B3FB9759BC0 (void);
-// 0x0000007D System.Void StarterAssets.ThirdPersonController::AssignAnimationIDs()
+// 0x00000080 System.Void StarterAssets.ThirdPersonController::AssignAnimationIDs()
 extern void ThirdPersonController_AssignAnimationIDs_m3F78712E347AAEB24671FD485878AD4EFB45FA6A (void);
-// 0x0000007E System.Void StarterAssets.ThirdPersonController::GroundedCheck()
+// 0x00000081 System.Void StarterAssets.ThirdPersonController::GroundedCheck()
 extern void ThirdPersonController_GroundedCheck_mEC00FD7C667109275F153C9A1E7BDA401D514AEE (void);
-// 0x0000007F System.Void StarterAssets.ThirdPersonController::CameraRotation()
+// 0x00000082 System.Void StarterAssets.ThirdPersonController::CameraRotation()
 extern void ThirdPersonController_CameraRotation_m24BBAE5DB2B55B6DDC5218DD0DB7C53F1EF30751 (void);
-// 0x00000080 System.Void StarterAssets.ThirdPersonController::Move()
+// 0x00000083 System.Void StarterAssets.ThirdPersonController::Move()
 extern void ThirdPersonController_Move_m6FB6A9AEA1B2354BAE790DE45C79292579802C76 (void);
-// 0x00000081 System.Void StarterAssets.ThirdPersonController::JumpAndGravity()
+// 0x00000084 System.Void StarterAssets.ThirdPersonController::JumpAndGravity()
 extern void ThirdPersonController_JumpAndGravity_m871B3C01ED71022CF151700F569540EAC058997F (void);
-// 0x00000082 System.Single StarterAssets.ThirdPersonController::ClampAngle(System.Single,System.Single,System.Single)
+// 0x00000085 System.Single StarterAssets.ThirdPersonController::ClampAngle(System.Single,System.Single,System.Single)
 extern void ThirdPersonController_ClampAngle_m7569DBBF5E50A690C57959DE6CCE6A18C32E19A2 (void);
-// 0x00000083 System.Void StarterAssets.ThirdPersonController::OnDrawGizmosSelected()
+// 0x00000086 System.Void StarterAssets.ThirdPersonController::OnDrawGizmosSelected()
 extern void ThirdPersonController_OnDrawGizmosSelected_mCD3D7F711815BC95C166CB8E67F3C5D085C38BA5 (void);
-// 0x00000084 System.Void StarterAssets.ThirdPersonController::OnFootstep(UnityEngine.AnimationEvent)
+// 0x00000087 System.Void StarterAssets.ThirdPersonController::OnFootstep(UnityEngine.AnimationEvent)
 extern void ThirdPersonController_OnFootstep_mFE54F581AB0F72FC34208BCB6ABF77311BCC3D02 (void);
-// 0x00000085 System.Void StarterAssets.ThirdPersonController::OnLand(UnityEngine.AnimationEvent)
+// 0x00000088 System.Void StarterAssets.ThirdPersonController::OnLand(UnityEngine.AnimationEvent)
 extern void ThirdPersonController_OnLand_mAF1A04288C4B0ED39ACA52599F18D059F78D41C8 (void);
-// 0x00000086 System.Void StarterAssets.ThirdPersonController::.ctor()
+// 0x00000089 System.Void StarterAssets.ThirdPersonController::.ctor()
 extern void ThirdPersonController__ctor_mA2ECE265C51A281DA13F2344E30363399DD64321 (void);
-// 0x00000087 System.Void UnityStandardAssets.SceneUtils.ParticleSceneControls::Awake()
+// 0x0000008A System.Void UnityStandardAssets.SceneUtils.ParticleSceneControls::Awake()
 extern void ParticleSceneControls_Awake_m7AD1EEC9E00076B93F16886376A22C155BF2AF0C (void);
-// 0x00000088 System.Void UnityStandardAssets.SceneUtils.ParticleSceneControls::OnDisable()
+// 0x0000008B System.Void UnityStandardAssets.SceneUtils.ParticleSceneControls::OnDisable()
 extern void ParticleSceneControls_OnDisable_m6686EE2C55BAAF9C8A2B2CB3757875C2BB3DAE99 (void);
-// 0x00000089 System.Void UnityStandardAssets.SceneUtils.ParticleSceneControls::Previous()
+// 0x0000008C System.Void UnityStandardAssets.SceneUtils.ParticleSceneControls::Previous()
 extern void ParticleSceneControls_Previous_mCA412358968E80B7918A6A0ACA8B9D69BDBBA081 (void);
-// 0x0000008A System.Void UnityStandardAssets.SceneUtils.ParticleSceneControls::Next()
+// 0x0000008D System.Void UnityStandardAssets.SceneUtils.ParticleSceneControls::Next()
 extern void ParticleSceneControls_Next_mF607DF0E31B7407AD6A38D97ED115B351D764D00 (void);
-// 0x0000008B System.Void UnityStandardAssets.SceneUtils.ParticleSceneControls::Update()
+// 0x0000008E System.Void UnityStandardAssets.SceneUtils.ParticleSceneControls::Update()
 extern void ParticleSceneControls_Update_m26C22D90E8DA0BAEBFA2D05AD6D3BD4594AD6433 (void);
-// 0x0000008C System.Boolean UnityStandardAssets.SceneUtils.ParticleSceneControls::CheckForGuiCollision()
+// 0x0000008F System.Boolean UnityStandardAssets.SceneUtils.ParticleSceneControls::CheckForGuiCollision()
 extern void ParticleSceneControls_CheckForGuiCollision_m960B71319864DFB0B51F02487D8940EE09898479 (void);
-// 0x0000008D System.Void UnityStandardAssets.SceneUtils.ParticleSceneControls::Select(System.Int32)
+// 0x00000090 System.Void UnityStandardAssets.SceneUtils.ParticleSceneControls::Select(System.Int32)
 extern void ParticleSceneControls_Select_mCB6246390E51EF7A03C6DCF0D07D1B05E0FF3091 (void);
-// 0x0000008E System.Void UnityStandardAssets.SceneUtils.ParticleSceneControls::.ctor()
+// 0x00000091 System.Void UnityStandardAssets.SceneUtils.ParticleSceneControls::.ctor()
 extern void ParticleSceneControls__ctor_m7C49AB25E454BBEC5DC95F1A6FC711726278D9B2 (void);
-// 0x0000008F System.Void UnityStandardAssets.SceneUtils.ParticleSceneControls/DemoParticleSystem::.ctor()
+// 0x00000092 System.Void UnityStandardAssets.SceneUtils.ParticleSceneControls/DemoParticleSystem::.ctor()
 extern void DemoParticleSystem__ctor_m985054002A2E04A2350EDAC74D56656BE7052937 (void);
-// 0x00000090 System.Void UnityStandardAssets.SceneUtils.ParticleSceneControls/DemoParticleSystemList::.ctor()
+// 0x00000093 System.Void UnityStandardAssets.SceneUtils.ParticleSceneControls/DemoParticleSystemList::.ctor()
 extern void DemoParticleSystemList__ctor_mDA776C0BBB3F11BB10FF7CE3A97B7473BF362215 (void);
-// 0x00000091 System.Void UnityStandardAssets.SceneUtils.PlaceTargetWithMouse::Update()
+// 0x00000094 System.Void UnityStandardAssets.SceneUtils.PlaceTargetWithMouse::Update()
 extern void PlaceTargetWithMouse_Update_m1B82D8022C8E827FE9358A3B0DEBD9C82938F37E (void);
-// 0x00000092 System.Void UnityStandardAssets.SceneUtils.PlaceTargetWithMouse::.ctor()
+// 0x00000095 System.Void UnityStandardAssets.SceneUtils.PlaceTargetWithMouse::.ctor()
 extern void PlaceTargetWithMouse__ctor_m26771B6F90509C421D601E582C42DABE58117FAA (void);
-// 0x00000093 System.Void UnityStandardAssets.SceneUtils.SlowMoButton::Start()
+// 0x00000096 System.Void UnityStandardAssets.SceneUtils.SlowMoButton::Start()
 extern void SlowMoButton_Start_m8158DB0C8073E178AB571AD22AA6A23D567A3600 (void);
-// 0x00000094 System.Void UnityStandardAssets.SceneUtils.SlowMoButton::OnDestroy()
+// 0x00000097 System.Void UnityStandardAssets.SceneUtils.SlowMoButton::OnDestroy()
 extern void SlowMoButton_OnDestroy_m429AA1769292326B734AB5F9509661C48A1228B0 (void);
-// 0x00000095 System.Void UnityStandardAssets.SceneUtils.SlowMoButton::ChangeSpeed()
+// 0x00000098 System.Void UnityStandardAssets.SceneUtils.SlowMoButton::ChangeSpeed()
 extern void SlowMoButton_ChangeSpeed_mAD4AE2BEABE358DAAC9A3585CE4B060D345A2863 (void);
-// 0x00000096 System.Void UnityStandardAssets.SceneUtils.SlowMoButton::.ctor()
+// 0x00000099 System.Void UnityStandardAssets.SceneUtils.SlowMoButton::.ctor()
 extern void SlowMoButton__ctor_m9889D6F64C350F4BAE500E96007375994AE81056 (void);
-static Il2CppMethodPointer s_methodPointers[150] = 
+static Il2CppMethodPointer s_methodPointers[153] = 
 {
 	Pigeon_Start_m70B18F4081F555B8C37E8F4521B334DC20BA54FE,
 	Pigeon_Update_m9D14B78A8990510023908F0394EF0887CDFC2496,
@@ -410,8 +416,11 @@ static Il2CppMethodPointer s_methodPointers[150] =
 	GameManager_Awake_m4B6E8E2AF58C95C9A2A0C4637A34AE0892CB637F,
 	GameManager__ctor_mF453CED520617BFB65C52405A964E06CF17DB368,
 	LevelManager_Awake_m5DEB1CF05B334C6E29A91D604623C1B8401AE09C,
+	LevelManager_Start_mA7A45D9D0CBA8784B87F70B204C19A2AAC234D42,
 	LevelManager_OnLevelClear_mC07D9DC6B2A3F67751B876D69B512C9A05D78055,
 	LevelManager_OnLevelFail_m0B9D656FA8579BA037AB1D077D42C6BD6BE349B3,
+	LevelManager_OnNextButtonPressed_m436B5C180DC8CCDBE13B6CF2B78A1C404A85072A,
+	LevelManager_OnRestartButtonPressed_m90FF24AF08B54C24A6DD2C6C8AB1F4146C9EDAC6,
 	LevelManager__ctor_m97F35AC08C296B73BD7D85FFB593A7BEA61B3F92,
 	Levels_Awake_m1C647210573D094A2BCB2236D733BA4CCBF52C31,
 	Levels__ctor_mEBD74F84ADAB8AC24649E600A1540049B1950AB4,
@@ -465,7 +474,7 @@ static Il2CppMethodPointer s_methodPointers[150] =
 	SlowMoButton_ChangeSpeed_mAD4AE2BEABE358DAAC9A3585CE4B060D345A2863,
 	SlowMoButton__ctor_m9889D6F64C350F4BAE500E96007375994AE81056,
 };
-static const int32_t s_InvokerIndices[150] = 
+static const int32_t s_InvokerIndices[153] = 
 {
 	7584,
 	7584,
@@ -570,6 +579,9 @@ static const int32_t s_InvokerIndices[150] =
 	7584,
 	7584,
 	7584,
+	7584,
+	7584,
+	7584,
 	6019,
 	6019,
 	6019,
@@ -622,7 +634,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	150,
+	153,
 	s_methodPointers,
 	0,
 	NULL,
