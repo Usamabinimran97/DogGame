@@ -42,6 +42,7 @@ public class LevelManager : MonoBehaviour
            UIManager.Instance.levelClear.SetActive(true);
            _currentLevelNumber++;
            _nextLevelNumber++;
+           CountdownTimer.Instance.StopTimer();
            PlayerPrefs.SetInt("LevelNumber", _currentLevelNumber);
        }
 

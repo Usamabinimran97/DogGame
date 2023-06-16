@@ -7,6 +7,13 @@ public class CountdownTimer : MonoBehaviour
     private float _currentTime;
     private bool _isRunning = false;
     private TextMeshProUGUI _timerText;
+    public static CountdownTimer Instance;
+
+    private void Awake()
+    {
+        if (Instance = null)
+            Instance = this;
+    }
 
     private void Start()
     {
