@@ -618,6 +618,8 @@ struct Func_2_tBD849D4F5EB84301B6ACA4A3842EDB2C52281F67;
 struct Func_2_t81B76467028D6BD95DE2EC625D0325AA0387285E;
 // System.Func`2<UnityEngine.Color,UnityEngine.Color32>
 struct Func_2_t74BA73845DFA0004A7F25F3773A11A75228F5277;
+// System.Func`2<SickscoreGames.HUDNavigationSystem.Configuration,System.Boolean>
+struct Func_2_t14F9DB9C82F02B7D2B8B8C4EDDE6B8055A5B95C0;
 // System.Func`2<UnityEngine.Rendering.Universal.LibTessDotNet.ContourVertex,System.Boolean>
 struct Func_2_t57123E8F86B56CD1CE6F3584588E024A7EDB9F2A;
 // System.Func`2<UnityEngine.Rendering.Universal.LibTessDotNet.ContourVertex,UnityEngine.Color>
@@ -1082,6 +1084,10 @@ struct Focusable_t39F2BAF0AF6CA465BC2BEDAF9B5B2CF379B846D0;
 struct Font_tC95270EA3198038970422D78B74A7F2E218A96B6;
 // UnityEngine.TextCore.Text.FontAsset
 struct FontAsset_t61A6446D934E582651044E33D250EA8D306AB958;
+// SickscoreGames.HUDNavigationSystem.HNSSceneAsset
+struct HNSSceneAsset_t725D535B281B6B72B7D3C808E289EDC6D8CE79AD;
+// SickscoreGames.HUDNavigationSystem.HNSSceneConfiguration
+struct HNSSceneConfiguration_tE0517BA9B4D250B895130E351C257B5F6F8334DC;
 // System.IAsyncResult
 struct IAsyncResult_t7B9B5A0ECB35DCEC31B8A8122C37D687369253B5;
 // System.Collections.IDictionary
@@ -2815,6 +2821,31 @@ struct Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B
 			uint8_t ___a_4_forAlignmentOnly;
 		};
 	};
+};
+
+// SickscoreGames.HUDNavigationSystem.Configuration
+struct Configuration_t9CA40939907E9EF1DF5B57E5A43D9012EBFADB43 
+{
+	// SickscoreGames.HUDNavigationSystem.HNSSceneAsset SickscoreGames.HUDNavigationSystem.Configuration::_Scene
+	HNSSceneAsset_t725D535B281B6B72B7D3C808E289EDC6D8CE79AD* ____Scene_0;
+	// System.Boolean SickscoreGames.HUDNavigationSystem.Configuration::_DisabledInScene
+	bool ____DisabledInScene_1;
+	// SickscoreGames.HUDNavigationSystem.HNSSceneConfiguration SickscoreGames.HUDNavigationSystem.Configuration::_Config
+	HNSSceneConfiguration_tE0517BA9B4D250B895130E351C257B5F6F8334DC* ____Config_2;
+};
+// Native definition for P/Invoke marshalling of SickscoreGames.HUDNavigationSystem.Configuration
+struct Configuration_t9CA40939907E9EF1DF5B57E5A43D9012EBFADB43_marshaled_pinvoke
+{
+	HNSSceneAsset_t725D535B281B6B72B7D3C808E289EDC6D8CE79AD* ____Scene_0;
+	int32_t ____DisabledInScene_1;
+	HNSSceneConfiguration_tE0517BA9B4D250B895130E351C257B5F6F8334DC* ____Config_2;
+};
+// Native definition for COM marshalling of SickscoreGames.HUDNavigationSystem.Configuration
+struct Configuration_t9CA40939907E9EF1DF5B57E5A43D9012EBFADB43_marshaled_com
+{
+	HNSSceneAsset_t725D535B281B6B72B7D3C808E289EDC6D8CE79AD* ____Scene_0;
+	int32_t ____DisabledInScene_1;
+	HNSSceneConfiguration_tE0517BA9B4D250B895130E351C257B5F6F8334DC* ____Config_2;
 };
 
 // System.DateTime
@@ -5437,6 +5468,11 @@ struct Func_2_t81B76467028D6BD95DE2EC625D0325AA0387285E  : public MulticastDeleg
 
 // System.Func`2<UnityEngine.Color,UnityEngine.Color32>
 struct Func_2_t74BA73845DFA0004A7F25F3773A11A75228F5277  : public MulticastDelegate_t
+{
+};
+
+// System.Func`2<SickscoreGames.HUDNavigationSystem.Configuration,System.Boolean>
+struct Func_2_t14F9DB9C82F02B7D2B8B8C4EDDE6B8055A5B95C0  : public MulticastDelegate_t
 {
 };
 
@@ -11436,6 +11472,79 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Func_2__ctor_m3F0B622CFF8856C182A01DC105
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B Func_2_Invoke_mDB0D63C6DA4FC8F4E65D1E67A762FB549B728597_gshared (Func_2_t74BA73845DFA0004A7F25F3773A11A75228F5277* __this, Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___arg0, const RuntimeMethod* method) 
 {
 	typedef Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B (*FunctionPointerType) (RuntimeObject*, Color_tD001788D726C3A7F1379BEED0260B9591F440C1F, const RuntimeMethod*);
+	return ((FunctionPointerType)__this->___invoke_impl_1)((Il2CppObject*)__this->___method_code_6, ___arg0, reinterpret_cast<RuntimeMethod*>(__this->___method_3));
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+bool Func_2_Invoke_mA979D52229CE40F44C5939D79E8DC63AE3E10AD8_Multicast(Func_2_t14F9DB9C82F02B7D2B8B8C4EDDE6B8055A5B95C0* __this, Configuration_t9CA40939907E9EF1DF5B57E5A43D9012EBFADB43 ___arg0, const RuntimeMethod* method)
+{
+	il2cpp_array_size_t length = __this->___delegates_13->max_length;
+	Delegate_t** delegatesToInvoke = reinterpret_cast<Delegate_t**>(__this->___delegates_13->GetAddressAtUnchecked(0));
+	bool retVal = false;
+	for (il2cpp_array_size_t i = 0; i < length; i++)
+	{
+		Func_2_t14F9DB9C82F02B7D2B8B8C4EDDE6B8055A5B95C0* currentDelegate = reinterpret_cast<Func_2_t14F9DB9C82F02B7D2B8B8C4EDDE6B8055A5B95C0*>(delegatesToInvoke[i]);
+		typedef bool (*FunctionPointerType) (RuntimeObject*, Configuration_t9CA40939907E9EF1DF5B57E5A43D9012EBFADB43, const RuntimeMethod*);
+		retVal = ((FunctionPointerType)currentDelegate->___invoke_impl_1)((Il2CppObject*)currentDelegate->___method_code_6, ___arg0, reinterpret_cast<RuntimeMethod*>(currentDelegate->___method_3));
+	}
+	return retVal;
+}
+bool Func_2_Invoke_mA979D52229CE40F44C5939D79E8DC63AE3E10AD8_Open(Func_2_t14F9DB9C82F02B7D2B8B8C4EDDE6B8055A5B95C0* __this, Configuration_t9CA40939907E9EF1DF5B57E5A43D9012EBFADB43 ___arg0, const RuntimeMethod* method)
+{
+	typedef bool (*FunctionPointerType) (Configuration_t9CA40939907E9EF1DF5B57E5A43D9012EBFADB43, const RuntimeMethod*);
+	return ((FunctionPointerType)__this->___method_ptr_0)(___arg0, method);
+}
+bool Func_2_Invoke_mA979D52229CE40F44C5939D79E8DC63AE3E10AD8_OpenStaticInvoker(Func_2_t14F9DB9C82F02B7D2B8B8C4EDDE6B8055A5B95C0* __this, Configuration_t9CA40939907E9EF1DF5B57E5A43D9012EBFADB43 ___arg0, const RuntimeMethod* method)
+{
+	return InvokerFuncInvoker1< bool, Configuration_t9CA40939907E9EF1DF5B57E5A43D9012EBFADB43 >::Invoke(__this->___method_ptr_0, method, NULL, ___arg0);
+}
+bool Func_2_Invoke_mA979D52229CE40F44C5939D79E8DC63AE3E10AD8_ClosedStaticInvoker(Func_2_t14F9DB9C82F02B7D2B8B8C4EDDE6B8055A5B95C0* __this, Configuration_t9CA40939907E9EF1DF5B57E5A43D9012EBFADB43 ___arg0, const RuntimeMethod* method)
+{
+	return InvokerFuncInvoker2< bool, RuntimeObject*, Configuration_t9CA40939907E9EF1DF5B57E5A43D9012EBFADB43 >::Invoke(__this->___method_ptr_0, method, NULL, __this->___m_target_2, ___arg0);
+}
+// System.Void System.Func`2<SickscoreGames.HUDNavigationSystem.Configuration,System.Boolean>::.ctor(System.Object,System.IntPtr)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Func_2__ctor_mBC1456CE4B395284B0220C3BD119462BF23B4606_gshared (Func_2_t14F9DB9C82F02B7D2B8B8C4EDDE6B8055A5B95C0* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method) 
+{
+	__this->___method_ptr_0 = il2cpp_codegen_get_virtual_call_method_pointer((RuntimeMethod*)___method1);
+	__this->___method_3 = ___method1;
+	__this->___m_target_2 = ___object0;
+	Il2CppCodeGenWriteBarrier((void**)(&__this->___m_target_2), (void*)___object0);
+	int parameterCount = il2cpp_codegen_method_parameter_count((RuntimeMethod*)___method1);
+	__this->___method_code_6 = (intptr_t)__this;
+	if (MethodIsStatic((RuntimeMethod*)___method1))
+	{
+		bool isOpen = parameterCount == 1;
+		if (il2cpp_codegen_call_method_via_invoker((RuntimeMethod*)___method1))
+			if (isOpen)
+				__this->___invoke_impl_1 = (intptr_t)&Func_2_Invoke_mA979D52229CE40F44C5939D79E8DC63AE3E10AD8_OpenStaticInvoker;
+			else
+				__this->___invoke_impl_1 = (intptr_t)&Func_2_Invoke_mA979D52229CE40F44C5939D79E8DC63AE3E10AD8_ClosedStaticInvoker;
+		else
+			if (isOpen)
+				__this->___invoke_impl_1 = (intptr_t)&Func_2_Invoke_mA979D52229CE40F44C5939D79E8DC63AE3E10AD8_Open;
+			else
+				{
+					__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
+					__this->___method_code_6 = (intptr_t)__this->___m_target_2;
+				}
+	}
+	else
+	{
+		__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
+		__this->___method_code_6 = (intptr_t)__this->___m_target_2;
+	}
+	__this->___extra_arg_5 = (intptr_t)&Func_2_Invoke_mA979D52229CE40F44C5939D79E8DC63AE3E10AD8_Multicast;
+}
+// TResult System.Func`2<SickscoreGames.HUDNavigationSystem.Configuration,System.Boolean>::Invoke(T)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Func_2_Invoke_mA979D52229CE40F44C5939D79E8DC63AE3E10AD8_gshared (Func_2_t14F9DB9C82F02B7D2B8B8C4EDDE6B8055A5B95C0* __this, Configuration_t9CA40939907E9EF1DF5B57E5A43D9012EBFADB43 ___arg0, const RuntimeMethod* method) 
+{
+	typedef bool (*FunctionPointerType) (RuntimeObject*, Configuration_t9CA40939907E9EF1DF5B57E5A43D9012EBFADB43, const RuntimeMethod*);
 	return ((FunctionPointerType)__this->___invoke_impl_1)((Il2CppObject*)__this->___method_code_6, ___arg0, reinterpret_cast<RuntimeMethod*>(__this->___method_3));
 }
 #ifdef __clang__

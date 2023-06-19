@@ -8,6 +8,7 @@ public class LevelManager : MonoBehaviour
     public static int hidrantCount;
     public List<Levels> levelsList;
     public List<GameObject> levelsListGameObjects;
+    public List<GameObject> fireHydrants;
     public static LevelManager Instance;
     private int _currentLevelNumber, _nextLevelNumber;
    
@@ -32,6 +33,7 @@ public class LevelManager : MonoBehaviour
            }
            levelsListGameObjects[_currentLevelNumber].SetActive(true);
            UIManager.Instance.totalHidrant.text = levelsList[_currentLevelNumber].totalHidrentsCount.ToString();
+           
        }
 
 
