@@ -20,5 +20,13 @@ public class DogFollow : MonoBehaviour
 
         // Set the agent's destination to the target position
         _agent.SetDestination(targetPosition);
+        
+        // Rotate the agent to face the target
+        RotateAgent();
+    }
+    
+    private void RotateAgent()
+    {
+        _agent.transform.rotation = target.rotation;
     }
 }
