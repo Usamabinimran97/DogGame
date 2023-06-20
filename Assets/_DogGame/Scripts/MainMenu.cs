@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class MainMenu : MonoBehaviour
@@ -7,6 +8,7 @@ public class MainMenu : MonoBehaviour
 
     public Sprite musicOff, musicOn, soundOff, soundOn, hapticOn, hapticOff;
     public Image music, sound, haptic;
+    public GameObject loading;
     private int _musicCount, _soundCount, _hapticCount;
 
     private void Awake()
@@ -55,5 +57,11 @@ public class MainMenu : MonoBehaviour
             haptic.sprite = hapticOn;
             _hapticCount = 0;
         }
+    }
+
+    public void OnStartButtonPressed()
+    {
+        loading.SetActive(true);
+        SceneManager.LoadScene("_DogGame/Scenes/Gameplay");
     }
 }
