@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using StarterAssets;
 using UnityEngine;
@@ -13,8 +14,9 @@ public class LevelManager : MonoBehaviour
     public StarterAssetsInputs playerInput;
     public static LevelManager Instance;
     private int _currentLevelNumber, _nextLevelNumber;
-   
-       private void Awake()
+    private static readonly int Walk = Animator.StringToHash("Walk");
+
+    private void Awake()
        {
            if (Instance == null)
                Instance = this;
@@ -35,6 +37,18 @@ public class LevelManager : MonoBehaviour
            }
            levelsListGameObjects[_currentLevelNumber].SetActive(true);
            UIManager.Instance.totalHidrant.text = levelsList[_currentLevelNumber].totalHidrentsCount.ToString();
+       }
+
+       private void Update()
+       {
+           if (playerInput.move.x > 0 || playerInput.move.y > 0)
+           {
+               dogAnimator.SetBool(Walk, true);
+           }
+           else
+           {
+               dogAnimator.SetBool(Walk, false);
+           }
        }
 
 
