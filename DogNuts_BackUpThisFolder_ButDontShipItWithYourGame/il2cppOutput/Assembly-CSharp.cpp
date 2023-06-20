@@ -11515,12 +11515,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LevelManager_Update_mD2004B9E4119DF7C3EE
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// if (playerInput.move.x > 0 || playerInput.move.y > 0)
+		// if (playerInput.move.x != 0 || playerInput.move.y != 0)
 		StarterAssetsInputs_t133BB053DB5E88FF96AD7A46722CFDD182A8B657* L_0 = __this->___playerInput_9;
 		NullCheck(L_0);
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_1 = (&L_0->___move_4);
 		float L_2 = L_1->___x_0;
-		if ((((float)L_2) > ((float)(0.0f))))
+		if ((!(((float)L_2) == ((float)(0.0f)))))
 		{
 			goto IL_002e;
 		}
@@ -11530,7 +11530,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LevelManager_Update_mD2004B9E4119DF7C3EE
 		NullCheck(L_3);
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_4 = (&L_3->___move_4);
 		float L_5 = L_4->___y_1;
-		if ((!(((float)L_5) > ((float)(0.0f)))))
+		if ((((float)L_5) == ((float)(0.0f))))
 		{
 			goto IL_0040;
 		}
