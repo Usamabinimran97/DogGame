@@ -33,15 +33,15 @@ MonoBehaviour:
   useCompassBar: 1
   compassBarRadius: 150
   useIndicators: 1
-  indicatorRadius: 25
+  indicatorRadius: 5
   indicatorHideDistance: 3
   useOffscreenIndicators: 1
   indicatorOffscreenBorder: 0.075
   useIndicatorScaling: 1
-  indicatorScaleRadius: 15
+  indicatorScaleRadius: 5
   indicatorMinScale: 0.8
   useIndicatorFading: 1
-  indicatorFadeRadius: 15
+  indicatorFadeRadius: 5
   indicatorMinFade: 0
   useMinimap: 1
   minimapProfile: {fileID: 0}

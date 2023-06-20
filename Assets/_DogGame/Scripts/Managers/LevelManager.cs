@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using StarterAssets;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -9,6 +10,7 @@ public class LevelManager : MonoBehaviour
     public List<Levels> levelsList;
     public List<GameObject> levelsListGameObjects;
     public List<GameObject> fireHydrants;
+    public StarterAssetsInputs playerInput;
     public static LevelManager Instance;
     private int _currentLevelNumber, _nextLevelNumber;
    
@@ -33,7 +35,6 @@ public class LevelManager : MonoBehaviour
            }
            levelsListGameObjects[_currentLevelNumber].SetActive(true);
            UIManager.Instance.totalHidrant.text = levelsList[_currentLevelNumber].totalHidrentsCount.ToString();
-           
        }
 
 
