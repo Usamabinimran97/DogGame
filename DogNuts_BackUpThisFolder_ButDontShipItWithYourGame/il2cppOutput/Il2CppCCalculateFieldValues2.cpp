@@ -19322,10 +19322,14 @@ struct LevelManager_t8405886BBC5A0ACBB1CC210E25D5DA1C72D16530  : public MonoBeha
 	List_1_t24A78B58D817C007E04C3752191CA9F3EC76118A* ___levelsList_6;
 	// System.Collections.Generic.List`1<UnityEngine.GameObject> LevelManager::levelsListGameObjects
 	List_1_tB951CE80B58D1BF9650862451D8DAD8C231F207B* ___levelsListGameObjects_7;
+	// System.Collections.Generic.List`1<UnityEngine.GameObject> LevelManager::fireHydrants
+	List_1_tB951CE80B58D1BF9650862451D8DAD8C231F207B* ___fireHydrants_8;
+	// StarterAssets.StarterAssetsInputs LevelManager::playerInput
+	StarterAssetsInputs_t133BB053DB5E88FF96AD7A46722CFDD182A8B657* ___playerInput_9;
 	// System.Int32 LevelManager::_currentLevelNumber
-	int32_t ____currentLevelNumber_9;
+	int32_t ____currentLevelNumber_11;
 	// System.Int32 LevelManager::_nextLevelNumber
-	int32_t ____nextLevelNumber_10;
+	int32_t ____nextLevelNumber_12;
 };
 
 struct LevelManager_t8405886BBC5A0ACBB1CC210E25D5DA1C72D16530_StaticFields
@@ -19333,7 +19337,9 @@ struct LevelManager_t8405886BBC5A0ACBB1CC210E25D5DA1C72D16530_StaticFields
 	// System.Int32 LevelManager::hidrantCount
 	int32_t ___hidrantCount_5;
 	// LevelManager LevelManager::Instance
-	LevelManager_t8405886BBC5A0ACBB1CC210E25D5DA1C72D16530* ___Instance_8;
+	LevelManager_t8405886BBC5A0ACBB1CC210E25D5DA1C72D16530* ___Instance_10;
+	// System.Int32 LevelManager::Walk
+	int32_t ___Walk_13;
 };
 
 // Levels
@@ -24814,9 +24820,9 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable7006[1] =
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable7007[1] = 
 {
 	static_cast<int32_t>(offsetof(GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6_StaticFields, ___Instance_4)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable7008[7] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable7008[10] = 
 {
-	static_cast<int32_t>(offsetof(LevelManager_t8405886BBC5A0ACBB1CC210E25D5DA1C72D16530, ___dogAnimator_4)),static_cast<int32_t>(offsetof(LevelManager_t8405886BBC5A0ACBB1CC210E25D5DA1C72D16530_StaticFields, ___hidrantCount_5)),static_cast<int32_t>(offsetof(LevelManager_t8405886BBC5A0ACBB1CC210E25D5DA1C72D16530, ___levelsList_6)),static_cast<int32_t>(offsetof(LevelManager_t8405886BBC5A0ACBB1CC210E25D5DA1C72D16530, ___levelsListGameObjects_7)),static_cast<int32_t>(offsetof(LevelManager_t8405886BBC5A0ACBB1CC210E25D5DA1C72D16530_StaticFields, ___Instance_8)),static_cast<int32_t>(offsetof(LevelManager_t8405886BBC5A0ACBB1CC210E25D5DA1C72D16530, ____currentLevelNumber_9)),static_cast<int32_t>(offsetof(LevelManager_t8405886BBC5A0ACBB1CC210E25D5DA1C72D16530, ____nextLevelNumber_10)),};
+	static_cast<int32_t>(offsetof(LevelManager_t8405886BBC5A0ACBB1CC210E25D5DA1C72D16530, ___dogAnimator_4)),static_cast<int32_t>(offsetof(LevelManager_t8405886BBC5A0ACBB1CC210E25D5DA1C72D16530_StaticFields, ___hidrantCount_5)),static_cast<int32_t>(offsetof(LevelManager_t8405886BBC5A0ACBB1CC210E25D5DA1C72D16530, ___levelsList_6)),static_cast<int32_t>(offsetof(LevelManager_t8405886BBC5A0ACBB1CC210E25D5DA1C72D16530, ___levelsListGameObjects_7)),static_cast<int32_t>(offsetof(LevelManager_t8405886BBC5A0ACBB1CC210E25D5DA1C72D16530, ___fireHydrants_8)),static_cast<int32_t>(offsetof(LevelManager_t8405886BBC5A0ACBB1CC210E25D5DA1C72D16530, ___playerInput_9)),static_cast<int32_t>(offsetof(LevelManager_t8405886BBC5A0ACBB1CC210E25D5DA1C72D16530_StaticFields, ___Instance_10)),static_cast<int32_t>(offsetof(LevelManager_t8405886BBC5A0ACBB1CC210E25D5DA1C72D16530, ____currentLevelNumber_11)),static_cast<int32_t>(offsetof(LevelManager_t8405886BBC5A0ACBB1CC210E25D5DA1C72D16530, ____nextLevelNumber_12)),static_cast<int32_t>(offsetof(LevelManager_t8405886BBC5A0ACBB1CC210E25D5DA1C72D16530_StaticFields, ___Walk_13)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable7009[2] = 
 {
 	static_cast<int32_t>(offsetof(Levels_t03F4F6AB75FBE170D0A96E193BD66E2C4254BD39, ___totalHidrentsCount_4)),static_cast<int32_t>(offsetof(Levels_t03F4F6AB75FBE170D0A96E193BD66E2C4254BD39_StaticFields, ___Instance_5)),};

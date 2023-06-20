@@ -41,7 +41,7 @@ public class LevelManager : MonoBehaviour
 
        private void Update()
        {
-           if (playerInput.move.x > 0 || playerInput.move.y > 0)
+           if (playerInput.move.x != 0 || playerInput.move.y != 0)
            {
                dogAnimator.SetBool(Walk, true);
            }
