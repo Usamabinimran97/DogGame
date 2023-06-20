@@ -1,4 +1,5 @@
 using System.Collections;
+using SickscoreGames.HUDNavigationSystem;
 using UnityEngine;
 
 public class FireHidrant : MonoBehaviour
@@ -27,5 +28,7 @@ public class FireHidrant : MonoBehaviour
         LevelManager.Instance.OnLevelClear();
         UIManager.Instance.joystick.SetActive(true);
         LevelManager.Instance.dogAnimator.SetBool(Pee, false);
+        transform.GetComponent<BoxCollider>().enabled = false;
+        transform.GetComponent<HUDNavigationElement>().enabled = false;
     }
 }

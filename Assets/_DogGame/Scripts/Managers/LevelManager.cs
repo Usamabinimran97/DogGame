@@ -12,6 +12,8 @@ public class LevelManager : MonoBehaviour
     public List<GameObject> levelsListGameObjects;
     public List<GameObject> fireHydrants;
     public StarterAssetsInputs playerInput;
+    public float minimumDistance = 5f;
+    public Transform player;
     public static LevelManager Instance;
     private int _currentLevelNumber, _nextLevelNumber;
     private static readonly int Walk = Animator.StringToHash("Walk");
@@ -37,6 +39,16 @@ public class LevelManager : MonoBehaviour
            }
            levelsListGameObjects[_currentLevelNumber].SetActive(true);
            UIManager.Instance.totalHidrant.text = levelsList[_currentLevelNumber].totalHidrentsCount.ToString();
+           
+           foreach (var currentObject in fireHydrants)
+           {
+               // Calculate the distance between the player and the object
+               var distance = Vector3.Distance(currentObject.transform.position, player.position);
+
+               // Compare the distance to the minimum distance threshold
+               // Enable the object
+               currentObject.SetActive(distance < minimumDistance);
+           }
        }
 
        private void Update()
@@ -49,6 +61,7 @@ public class LevelManager : MonoBehaviour
            {
                dogAnimator.SetBool(Walk, false);
            }
+           
        }
 
 
