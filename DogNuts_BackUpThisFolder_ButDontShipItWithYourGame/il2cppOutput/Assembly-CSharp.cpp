@@ -6414,8 +6414,6 @@ inline HUDNavigationCanvas_t441EF08B9D033754D5E6B367577B457CE3B62C83* Object_Fin
 {
 	return ((  HUDNavigationCanvas_t441EF08B9D033754D5E6B367577B457CE3B62C83* (*) (const RuntimeMethod*))Object_FindObjectOfType_TisRuntimeObject_m9990A7304DF02BA1ED160587D1C2F6DAE89BB343_gshared)(method);
 }
-// System.Void UnityEngine.Object::DontDestroyOnLoad(UnityEngine.Object)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object_DontDestroyOnLoad_m303AA1C4DC810349F285B4809E426CBBA8F834F9 (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___target0, const RuntimeMethod* method) ;
 // System.Boolean SickscoreGames.HUDNavigationSystem.HUDNavigationCanvas::get_isEnabled()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool HUDNavigationCanvas_get_isEnabled_m9733269FE4021BCDF832D82EF86F990E4F0E0E1A_inline (HUDNavigationCanvas_t441EF08B9D033754D5E6B367577B457CE3B62C83* __this, const RuntimeMethod* method) ;
 // System.Void SickscoreGames.HUDNavigationSystem.HUDNavigationCanvas::set_isEnabled(System.Boolean)
@@ -14500,35 +14498,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HUDNavigationCanvas_Start_m8A7E512B6DD1E
 
 IL_0019:
 	{
-		// if (_HUDNavigationSystem != null && _HUDNavigationSystem.KeepAliveOnLoad)
-		HUDNavigationSystem_tE575CD21B5E7C7FF2CB53DB135BFEFB3E7087CD5* L_3 = __this->____HUDNavigationSystem_11;
-		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
-		bool L_4;
-		L_4 = Object_op_Inequality_m4D656395C27694A7F33F5AA8DE80A7AAF9E20BA7(L_3, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
-		if (!L_4)
-		{
-			goto IL_003f;
-		}
-	}
-	{
-		HUDNavigationSystem_tE575CD21B5E7C7FF2CB53DB135BFEFB3E7087CD5* L_5 = __this->____HUDNavigationSystem_11;
-		NullCheck(L_5);
-		bool L_6 = L_5->___KeepAliveOnLoad_10;
-		if (!L_6)
-		{
-			goto IL_003f;
-		}
-	}
-	{
-		// DontDestroyOnLoad (this.gameObject);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_7;
-		L_7 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(__this, NULL);
-		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
-		Object_DontDestroyOnLoad_m303AA1C4DC810349F285B4809E426CBBA8F834F9(L_7, NULL);
-	}
-
-IL_003f:
-	{
 		// }
 		return;
 	}
@@ -17149,35 +17118,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HUDNavigationSceneManager_Start_mE115FCD
 
 IL_0019:
 	{
-		// if (_HUDNavigationSystem != null && _HUDNavigationSystem.KeepAliveOnLoad)
-		HUDNavigationSystem_tE575CD21B5E7C7FF2CB53DB135BFEFB3E7087CD5* L_3 = __this->____HUDNavigationSystem_6;
-		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
-		bool L_4;
-		L_4 = Object_op_Inequality_m4D656395C27694A7F33F5AA8DE80A7AAF9E20BA7(L_3, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
-		if (!L_4)
-		{
-			goto IL_003f;
-		}
-	}
-	{
-		HUDNavigationSystem_tE575CD21B5E7C7FF2CB53DB135BFEFB3E7087CD5* L_5 = __this->____HUDNavigationSystem_6;
-		NullCheck(L_5);
-		bool L_6 = L_5->___KeepAliveOnLoad_10;
-		if (!L_6)
-		{
-			goto IL_003f;
-		}
-	}
-	{
-		// DontDestroyOnLoad (this.gameObject);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_7;
-		L_7 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(__this, NULL);
-		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
-		Object_DontDestroyOnLoad_m303AA1C4DC810349F285B4809E426CBBA8F834F9(L_7, NULL);
-	}
-
-IL_003f:
-	{
 		// }
 		return;
 	}
@@ -17629,23 +17569,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HUDNavigationSystem_Awake_mC75B1D985596A
 	}
 
 IL_0019:
-	{
-		// if (KeepAliveOnLoad)
-		bool L_3 = __this->___KeepAliveOnLoad_10;
-		if (!L_3)
-		{
-			goto IL_002c;
-		}
-	}
-	{
-		// DontDestroyOnLoad (this.gameObject);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_4;
-		L_4 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(__this, NULL);
-		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
-		Object_DontDestroyOnLoad_m303AA1C4DC810349F285B4809E426CBBA8F834F9(L_4, NULL);
-	}
-
-IL_002c:
 	{
 		// _Instance = this;
 		((HUDNavigationSystem_tE575CD21B5E7C7FF2CB53DB135BFEFB3E7087CD5_StaticFields*)il2cpp_codegen_static_fields_for(HUDNavigationSystem_tE575CD21B5E7C7FF2CB53DB135BFEFB3E7087CD5_il2cpp_TypeInfo_var))->____Instance_4 = __this;
