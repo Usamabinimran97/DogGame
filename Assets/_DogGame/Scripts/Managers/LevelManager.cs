@@ -73,8 +73,16 @@ public class LevelManager : MonoBehaviour
            var score = PlayerPrefs.GetInt("Bones");
            score += 100;
            PlayerPrefs.SetInt("Bones", score);
-           _currentLevelNumber++;
-           _nextLevelNumber++;
+           if (_currentLevelNumber == levelsList.Count - 1)
+           {
+               _currentLevelNumber = 0;
+               _nextLevelNumber = 1;
+           }
+           else
+           {
+               _currentLevelNumber++;
+               _nextLevelNumber++;   
+           }
            CountdownTimer.Instance.StopTimer();
            PlayerPrefs.SetInt("LevelNumber", _currentLevelNumber);
        }
