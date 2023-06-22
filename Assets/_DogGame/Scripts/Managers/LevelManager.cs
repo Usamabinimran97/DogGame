@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 using StarterAssets;
 using UnityEngine;
@@ -18,6 +17,7 @@ public class LevelManager : MonoBehaviour
     public DogFollow dogFollow;
     [FormerlySerializedAs("_dogOffset")] public Vector3 dogOffset;
     public static LevelManager Instance;
+    public bool levelClear;
     private int _currentLevelNumber, _nextLevelNumber;
     private static readonly int Walk = Animator.StringToHash("Walk");
 
@@ -44,6 +44,7 @@ public class LevelManager : MonoBehaviour
            UIManager.Instance.totalHidrant.text = levelsList[_currentLevelNumber].totalHidrentsCount.ToString();
            dogOffset = dogFollow.offset;
            hidrantCount = 0;
+           CountdownTimer.Instance.totalTime += (_currentLevelNumber * 30);
            foreach (var currentObject in fireHydrants)
            {
                // Calculate the distance between the player and the object
@@ -74,6 +75,7 @@ public class LevelManager : MonoBehaviour
        public void OnLevelClear()
        {
            if (hidrantCount < levelsList[_currentLevelNumber].totalHidrentsCount) return;
+           levelClear = true;
            UIManager.Instance.joystick.SetActive(false);
            UIManager.Instance.levelClear.SetActive(true);
            var score = PlayerPrefs.GetInt("Bones");
@@ -104,6 +106,7 @@ public class LevelManager : MonoBehaviour
 
        public void OnNextButtonPressed()
        {
+           levelClear = false;
            SceneManager.LoadScene("_DogGame/Scenes/Gameplay");
        }
        

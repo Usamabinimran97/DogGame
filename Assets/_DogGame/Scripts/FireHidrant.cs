@@ -28,7 +28,7 @@ public class FireHidrant : MonoBehaviour
         LevelManager.hidrantCount++;
         UIManager.Instance.currentHidrant.text = LevelManager.hidrantCount.ToString();
         LevelManager.Instance.OnLevelClear();
-        UIManager.Instance.joystick.SetActive(true);
+        UIManager.Instance.joystick.SetActive(!LevelManager.Instance.levelClear);
         LevelManager.Instance.dogFollow.offset = LevelManager.Instance.dogOffset;
         LevelManager.Instance.dogAnimator.SetBool(Pee, false);
         transform.GetComponent<BoxCollider>().enabled = false;
