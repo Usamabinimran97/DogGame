@@ -70,6 +70,9 @@ public class LevelManager : MonoBehaviour
            if (hidrantCount < levelsList[_currentLevelNumber].totalHidrentsCount) return;
            UIManager.Instance.joystick.SetActive(false);
            UIManager.Instance.levelClear.SetActive(true);
+           var score = PlayerPrefs.GetInt("Bones");
+           score += 100;
+           PlayerPrefs.SetInt("Bones", score);
            _currentLevelNumber++;
            _nextLevelNumber++;
            CountdownTimer.Instance.StopTimer();
@@ -80,6 +83,9 @@ public class LevelManager : MonoBehaviour
        {
            UIManager.Instance.joystick.SetActive(false);
            UIManager.Instance.levelFail.SetActive(true);
+           var score = PlayerPrefs.GetInt("Bones");
+           score += 20;
+           PlayerPrefs.SetInt("Bones", score);
        }
 
        public void OnNextButtonPressed()

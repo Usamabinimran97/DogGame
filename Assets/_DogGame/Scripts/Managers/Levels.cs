@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Levels : MonoBehaviour
 {
-    public int totalHidrentsCount;
+    public int totalHidrentsCount, winScore;
     public static Levels Instance;
 
     private void Awake()
