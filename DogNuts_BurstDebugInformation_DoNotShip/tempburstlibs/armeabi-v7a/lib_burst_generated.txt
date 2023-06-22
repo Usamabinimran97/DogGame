@@ -172,6 +172,17 @@ Library: lib_burst_generated
 --root-assembly=C:\Users\hp\OneDrive\Desktop\DogGame\Temp\StagingArea\Data\Managed\Unity.RenderPipelines.Core.ShaderLibrary.dll
 --root-assembly=C:\Users\hp\OneDrive\Desktop\DogGame\Temp\StagingArea\Data\Managed\Unity.Recorder.Base.dll
 --root-assembly=C:\Users\hp\OneDrive\Desktop\DogGame\Temp\StagingArea\Data\Managed\Unity.RenderPipelines.Universal.Shaders.dll
+--root-assembly=C:\Users\hp\OneDrive\Desktop\DogGame\Temp\StagingArea\Data\Managed\UnityEngine.Purchasing.WinRTCore.dll
+--root-assembly=C:\Users\hp\OneDrive\Desktop\DogGame\Temp\StagingArea\Data\Managed\UnityEngine.Purchasing.Stores.dll
+--root-assembly=C:\Users\hp\OneDrive\Desktop\DogGame\Temp\StagingArea\Data\Managed\UnityEngine.Purchasing.Security.dll
+--root-assembly=C:\Users\hp\OneDrive\Desktop\DogGame\Temp\StagingArea\Data\Managed\UnityEngine.Purchasing.dll
+--root-assembly=C:\Users\hp\OneDrive\Desktop\DogGame\Temp\StagingArea\Data\Managed\UnityEngine.Purchasing.WinRTStub.dll
+--root-assembly=C:\Users\hp\OneDrive\Desktop\DogGame\Temp\StagingArea\Data\Managed\UnityEngine.Purchasing.SecurityCore.dll
+--root-assembly=C:\Users\hp\OneDrive\Desktop\DogGame\Temp\StagingArea\Data\Managed\UnityEngine.Purchasing.AppleCore.dll
+--root-assembly=C:\Users\hp\OneDrive\Desktop\DogGame\Temp\StagingArea\Data\Managed\UnityEngine.Purchasing.Codeless.dll
+--root-assembly=C:\Users\hp\OneDrive\Desktop\DogGame\Temp\StagingArea\Data\Managed\Purchasing.Common.dll
+--root-assembly=C:\Users\hp\OneDrive\Desktop\DogGame\Temp\StagingArea\Data\Managed\UnityEngine.Purchasing.AppleStub.dll
+--root-assembly=C:\Users\hp\OneDrive\Desktop\DogGame\Temp\StagingArea\Data\Managed\UnityEngine.Purchasing.AppleMacosStub.dll
 --assembly-folder=C:\Users\hp\OneDrive\Desktop\DogGame\Temp\StagingArea\Data\Managed\
 --pdb-search-paths=Temp/ManagedSymbols/
 --method=Unity.Jobs.IJobForExtensions+ForJobStruct`1[[UnityEngine.Rendering.Universal.SliceCullingJob, Unity.RenderPipelines.Universal.Runtime, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::Execute(UnityEngine.Rendering.Universal.SliceCullingJob&, Unity.RenderPipelines.Universal.Runtime, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null|System.IntPtr, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|System.IntPtr, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|Unity.Jobs.LowLevel.Unsafe.JobRanges&, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null|System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089)--1998da082e6413092f0e7bcd5a0e9331
