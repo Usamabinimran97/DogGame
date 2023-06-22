@@ -13,11 +13,11 @@ public class FireHidrant : MonoBehaviour
     {
         if (!other.CompareTag("Player")) return;
         UIManager.Instance.joystick.SetActive(false);
+        LevelManager.Instance.peeParticle.Play(true);
         LevelManager.Instance.dogAnimator.SetBool(Pee, true);
         _stateInfo = LevelManager.Instance.dogAnimator.GetCurrentAnimatorStateInfo(0);
         _animationTime = _stateInfo.normalizedTime * _stateInfo.length;
         LevelManager.Instance.dogFollow.offset = new Vector3(-1, 0, 0);
-        LevelManager.Instance.peeParticle.Play();
         StartCoroutine(WaitTillAnimation(_animationTime));
         LevelManager.Instance.playerInput.move = Vector2.zero;
         
@@ -27,11 +27,11 @@ public class FireHidrant : MonoBehaviour
     {
         yield return new WaitForSecondsRealtime(6f);
         LevelManager.hidrantCount++;
+        LevelManager.Instance.peeParticle.Stop(true);
         UIManager.Instance.currentHidrant.text = LevelManager.hidrantCount.ToString();
         LevelManager.Instance.OnLevelClear();
         UIManager.Instance.joystick.SetActive(!LevelManager.Instance.levelClear);
         LevelManager.Instance.dogFollow.offset = LevelManager.Instance.dogOffset;
-        LevelManager.Instance.peeParticle.Stop();
         LevelManager.Instance.dogAnimator.SetBool(Pee, false);
         transform.GetComponent<BoxCollider>().enabled = false;
         transform.GetComponent<HUDNavigationElement>().enabled = false;
