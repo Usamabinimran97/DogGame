@@ -68,7 +68,6 @@ public class MainMenu : MonoBehaviour
 
     public void OnStartButtonPressed()
     {
-        AdsManager.Instance.ShowInterstitialAd();
         loading.SetActive(true);
         SceneManager.LoadScene("_DogGame/Scenes/Gameplay");
     }
