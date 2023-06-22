@@ -1,12 +1,12 @@
-using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CountdownTimer : MonoBehaviour
 {
     public float totalTime = 60f; // Total time in seconds
     private float _currentTime;
     private bool _isRunning = false;
-    private TextMeshProUGUI _timerText;
+    private Text _timerText;
     public static CountdownTimer Instance;
 
     private void Awake()
@@ -17,7 +17,7 @@ public class CountdownTimer : MonoBehaviour
 
     private void Start()
     {
-        _timerText = GetComponent<TextMeshProUGUI>();
+        _timerText = GetComponent<Text>();
         StartTimer();
     }
 
@@ -49,11 +49,18 @@ public class CountdownTimer : MonoBehaviour
     {
         _isRunning = false;
     }
+    
+    public void ResetTimer()
+    {
+        StopTimer();
+        _currentTime = totalTime;
+        UpdateTimerText();
+    }
 
     private void UpdateTimerText()
     {
-        int minutes = Mathf.FloorToInt(_currentTime / 60f);
-        int seconds = Mathf.FloorToInt(_currentTime % 60f);
+        var minutes = Mathf.FloorToInt(_currentTime / 60f);
+        var seconds = Mathf.FloorToInt(_currentTime % 60f);
         _timerText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
     }
 }

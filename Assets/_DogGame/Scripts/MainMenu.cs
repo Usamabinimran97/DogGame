@@ -21,6 +21,7 @@ public class MainMenu : MonoBehaviour
     private void Start()
     {
         boneIndicatorText.text = PlayerPrefs.GetInt("Bones").ToString();
+        AdsManager.Instance.ShowBannerAd();
     }
 
     public void OnMusicButton()
@@ -67,6 +68,7 @@ public class MainMenu : MonoBehaviour
 
     public void OnStartButtonPressed()
     {
+        AdsManager.Instance.ShowInterstitialAd();
         loading.SetActive(true);
         SceneManager.LoadScene("_DogGame/Scenes/Gameplay");
     }
