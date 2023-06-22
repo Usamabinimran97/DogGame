@@ -22,7 +22,7 @@ public class FireHidrant : MonoBehaviour
 
     private IEnumerator WaitTillAnimation(float animationTime)
     {
-        yield return new WaitForSecondsRealtime(animationTime);
+        yield return new WaitForSecondsRealtime(6f);
         LevelManager.hidrantCount++;
         UIManager.Instance.currentHidrant.text = LevelManager.hidrantCount.ToString();
         LevelManager.Instance.OnLevelClear();

@@ -3685,10 +3685,8 @@ struct U3CWaitTillAnimationU3Ed__4_t864B6885D918421C3A995A3DDEC55E0167750F31  : 
 	int32_t ___U3CU3E1__state_0;
 	// System.Object FireHidrant/<WaitTillAnimation>d__4::<>2__current
 	RuntimeObject* ___U3CU3E2__current_1;
-	// System.Single FireHidrant/<WaitTillAnimation>d__4::animationTime
-	float ___animationTime_2;
 	// FireHidrant FireHidrant/<WaitTillAnimation>d__4::<>4__this
-	FireHidrant_tA85121EF370ACAD08F8082F85FED541267260EC9* ___U3CU3E4__this_3;
+	FireHidrant_tA85121EF370ACAD08F8082F85FED541267260EC9* ___U3CU3E4__this_2;
 };
 
 // UnityEngine.TextCore.Text.FontAsset/<>c
@@ -24864,9 +24862,9 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable7001[5] =
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable7002[3] = 
 {
 	static_cast<int32_t>(offsetof(DogFollow_t61608269C2B231E99E3CEB852D441D958CE21862, ___target_4)),static_cast<int32_t>(offsetof(DogFollow_t61608269C2B231E99E3CEB852D441D958CE21862, ___offset_5)),static_cast<int32_t>(offsetof(DogFollow_t61608269C2B231E99E3CEB852D441D958CE21862, ____agent_6)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable7003[4] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable7003[3] = 
 {
-	static_cast<int32_t>(offsetof(U3CWaitTillAnimationU3Ed__4_t864B6885D918421C3A995A3DDEC55E0167750F31, ___U3CU3E1__state_0)),static_cast<int32_t>(offsetof(U3CWaitTillAnimationU3Ed__4_t864B6885D918421C3A995A3DDEC55E0167750F31, ___U3CU3E2__current_1)),static_cast<int32_t>(offsetof(U3CWaitTillAnimationU3Ed__4_t864B6885D918421C3A995A3DDEC55E0167750F31, ___animationTime_2)),static_cast<int32_t>(offsetof(U3CWaitTillAnimationU3Ed__4_t864B6885D918421C3A995A3DDEC55E0167750F31, ___U3CU3E4__this_3)),};
+	static_cast<int32_t>(offsetof(U3CWaitTillAnimationU3Ed__4_t864B6885D918421C3A995A3DDEC55E0167750F31, ___U3CU3E1__state_0)),static_cast<int32_t>(offsetof(U3CWaitTillAnimationU3Ed__4_t864B6885D918421C3A995A3DDEC55E0167750F31, ___U3CU3E2__current_1)),static_cast<int32_t>(offsetof(U3CWaitTillAnimationU3Ed__4_t864B6885D918421C3A995A3DDEC55E0167750F31, ___U3CU3E4__this_2)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable7004[3] = 
 {
 	static_cast<int32_t>(offsetof(FireHidrant_tA85121EF370ACAD08F8082F85FED541267260EC9_StaticFields, ___Pee_4)),static_cast<int32_t>(offsetof(FireHidrant_tA85121EF370ACAD08F8082F85FED541267260EC9, ____stateInfo_5)),static_cast<int32_t>(offsetof(FireHidrant_tA85121EF370ACAD08F8082F85FED541267260EC9, ____animationTime_6)),};
