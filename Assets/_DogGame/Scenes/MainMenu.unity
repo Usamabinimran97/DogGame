@@ -1577,6 +1577,7 @@ MonoBehaviour:
   sound: {fileID: 1633298667}
   haptic: {fileID: 1337190022}
   loading: {fileID: 279782908}
+  boneIndicatorText: {fileID: 1171571568}
 --- !u!1 &401528569
 GameObject:
   m_ObjectHideFlags: 0

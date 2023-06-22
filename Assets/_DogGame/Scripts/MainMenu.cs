@@ -9,12 +9,18 @@ public class MainMenu : MonoBehaviour
     public Sprite musicOff, musicOn, soundOff, soundOn, hapticOn, hapticOff;
     public Image music, sound, haptic;
     public GameObject loading;
+    public Text boneIndicatorText;
     private int _musicCount, _soundCount, _hapticCount;
 
     private void Awake()
     {
         if (Instance == null)
             Instance = this;
+    }
+
+    private void Start()
+    {
+        boneIndicatorText.text = PlayerPrefs.GetInt("Bones").ToString();
     }
 
     public void OnMusicButton()
