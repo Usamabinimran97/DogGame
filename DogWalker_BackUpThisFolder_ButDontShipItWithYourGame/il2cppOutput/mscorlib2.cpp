@@ -761,6 +761,7 @@ IL2CPP_EXTERN_C const RuntimeMethod* Convert_ToBase64String_mB276B21511FB01CDE03
 IL2CPP_EXTERN_C const RuntimeMethod* Convert_ToBase64String_mD54CB9A36EA0382194415F9FAA2D89DF34043D79_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Convert_ToBase64_CalculateAndValidateOutputLength_m53BDF9C19D8CBBECC4CD9556CA22483A8D023275_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Convert_ToChar_m999DFF96BEC05D5CFDAAC59C19F125C6827E436C_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Convert_ToInt32_m8881C26C9DC63CBE2186F7180F780706A10283F6_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Convert_ToInt32_mF5B01B9D8B48919B05632EBF8ED0553474803A19_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Convert_ToInt64_m5B707D520332D512D2B81C10D2F4044FA468C3A4_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Convert_ToString_m244C97184477B594D97652377A63F2A205EC9B1E_RuntimeMethod_var;
@@ -4610,6 +4611,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Decimal_tDA6C877282B2D789CF97C0949661CC11D643
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D DateTime_Parse_mFC060EFBF6C9D9FF7E17E23800E3CB14D04B322A (String_t* ___s0, RuntimeObject* ___provider1, const RuntimeMethod* method) ;
 // System.String System.Int32::ToString(System.IFormatProvider)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Int32_ToString_m3B2730D9F5B0C1C57DCCC8B8DCFB8E5EC4E8979B (int32_t* __this, RuntimeObject* ___provider0, const RuntimeMethod* method) ;
+// System.Int32 System.ParseNumbers::StringToInt(System.ReadOnlySpan`1<System.Char>,System.Int32,System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ParseNumbers_StringToInt_mE397CFF0BD46555202198D774148AE64023464F4 (ReadOnlySpan_1_t59614EA6E51A945A32B02AB17FBCBDF9A5C419C1 ___s0, int32_t ___radix1, int32_t ___flags2, const RuntimeMethod* method) ;
 // System.String System.ParseNumbers::IntToString(System.Int32,System.Int32,System.Int32,System.Char,System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ParseNumbers_IntToString_mBA9B8DE63AD27B0E70D7EBC6E84242CEF32C3F5E (int32_t ___n0, int32_t ___radix1, int32_t ___width2, Il2CppChar ___paddingChar3, int32_t ___flags4, const RuntimeMethod* method) ;
 // System.String System.ParseNumbers::LongToString(System.Int64,System.Int32,System.Int32,System.Char,System.Int32)
@@ -30649,6 +30652,67 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Convert_ToString_m8EFAEC53F711584BC
 		String_t* L_1;
 		L_1 = Int32_ToString_m3B2730D9F5B0C1C57DCCC8B8DCFB8E5EC4E8979B((&___value0), L_0, NULL);
 		return L_1;
+	}
+}
+// System.Int32 System.Convert::ToInt32(System.String,System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Convert_ToInt32_m8881C26C9DC63CBE2186F7180F780706A10283F6 (String_t* ___value0, int32_t ___fromBase1, const RuntimeMethod* method) 
+{
+	{
+		int32_t L_0 = ___fromBase1;
+		if ((((int32_t)L_0) == ((int32_t)2)))
+		{
+			goto IL_001d;
+		}
+	}
+	{
+		int32_t L_1 = ___fromBase1;
+		if ((((int32_t)L_1) == ((int32_t)8)))
+		{
+			goto IL_001d;
+		}
+	}
+	{
+		int32_t L_2 = ___fromBase1;
+		if ((((int32_t)L_2) == ((int32_t)((int32_t)10))))
+		{
+			goto IL_001d;
+		}
+	}
+	{
+		int32_t L_3 = ___fromBase1;
+		if ((((int32_t)L_3) == ((int32_t)((int32_t)16))))
+		{
+			goto IL_001d;
+		}
+	}
+	{
+		ArgumentException_tAD90411542A20A9C72D5CDA3A84181D8B947A263* L_4 = (ArgumentException_tAD90411542A20A9C72D5CDA3A84181D8B947A263*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&ArgumentException_tAD90411542A20A9C72D5CDA3A84181D8B947A263_il2cpp_TypeInfo_var)));
+		NullCheck(L_4);
+		ArgumentException__ctor_m026938A67AF9D36BB7ED27F80425D7194B514465(L_4, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteralB780ED358EA2512EAEC12C4AAB63B013F81BFB70)), NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_4, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Convert_ToInt32_m8881C26C9DC63CBE2186F7180F780706A10283F6_RuntimeMethod_var)));
+	}
+
+IL_001d:
+	{
+		String_t* L_5 = ___value0;
+		if (L_5)
+		{
+			goto IL_0022;
+		}
+	}
+	{
+		return 0;
+	}
+
+IL_0022:
+	{
+		String_t* L_6 = ___value0;
+		ReadOnlySpan_1_t59614EA6E51A945A32B02AB17FBCBDF9A5C419C1 L_7;
+		L_7 = MemoryExtensions_AsSpan_m738C019A02A3B4B8BFEACFFA013409898B81D4FB_inline(L_6, NULL);
+		int32_t L_8 = ___fromBase1;
+		int32_t L_9;
+		L_9 = ParseNumbers_StringToInt_mE397CFF0BD46555202198D774148AE64023464F4(L_7, L_8, ((int32_t)4096), NULL);
+		return L_9;
 	}
 }
 // System.String System.Convert::ToString(System.Byte,System.Int32)

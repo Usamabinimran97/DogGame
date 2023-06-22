@@ -4193,6 +4193,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ArgumentException__ctor_m026938A67AF9D36
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OverflowException__ctor_m2B99D79236B7B87C0BB6C9AB2E557DECE481C264 (OverflowException_t6F6AD8CACE20C37F701C05B373A215C4802FAB0C* __this, String_t* ___message0, const RuntimeMethod* method) ;
 // System.Int64 System.ParseNumbers::GrabLongs(System.Int32,System.ReadOnlySpan`1<System.Char>,System.Int32&,System.Boolean)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int64_t ParseNumbers_GrabLongs_m9FDE2BDE1070563F85E6DD45E9957B4AE8C563F1 (int32_t ___radix0, ReadOnlySpan_1_t59614EA6E51A945A32B02AB17FBCBDF9A5C419C1 ___s1, int32_t* ___i2, bool ___isUnsigned3, const RuntimeMethod* method) ;
+// System.Int32 System.ParseNumbers::StringToInt(System.ReadOnlySpan`1<System.Char>,System.Int32,System.Int32,System.Int32&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ParseNumbers_StringToInt_mFA272AA5E18321305FCBA935AA610A039B7A7636 (ReadOnlySpan_1_t59614EA6E51A945A32B02AB17FBCBDF9A5C419C1 ___s0, int32_t ___radix1, int32_t ___flags2, int32_t* ___currPos3, const RuntimeMethod* method) ;
 // System.Int32 System.ParseNumbers::GrabInts(System.Int32,System.ReadOnlySpan`1<System.Char>,System.Int32&,System.Boolean)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ParseNumbers_GrabInts_m20B4039816044D85F56D51D33E9AB7A7086DF087 (int32_t ___radix0, ReadOnlySpan_1_t59614EA6E51A945A32B02AB17FBCBDF9A5C419C1 ___s1, int32_t* ___i2, bool ___isUnsigned3, const RuntimeMethod* method) ;
 // System.Void System.Span`1<System.Char>::.ctor(System.Void*,System.Int32)
@@ -6609,6 +6611,20 @@ IL_0179:
 	{
 		int64_t L_68 = V_5;
 		return L_68;
+	}
+}
+// System.Int32 System.ParseNumbers::StringToInt(System.ReadOnlySpan`1<System.Char>,System.Int32,System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ParseNumbers_StringToInt_mE397CFF0BD46555202198D774148AE64023464F4 (ReadOnlySpan_1_t59614EA6E51A945A32B02AB17FBCBDF9A5C419C1 ___s0, int32_t ___radix1, int32_t ___flags2, const RuntimeMethod* method) 
+{
+	int32_t V_0 = 0;
+	{
+		V_0 = 0;
+		ReadOnlySpan_1_t59614EA6E51A945A32B02AB17FBCBDF9A5C419C1 L_0 = ___s0;
+		int32_t L_1 = ___radix1;
+		int32_t L_2 = ___flags2;
+		int32_t L_3;
+		L_3 = ParseNumbers_StringToInt_mFA272AA5E18321305FCBA935AA610A039B7A7636(L_0, L_1, L_2, (&V_0), NULL);
+		return L_3;
 	}
 }
 // System.Int32 System.ParseNumbers::StringToInt(System.ReadOnlySpan`1<System.Char>,System.Int32,System.Int32,System.Int32&)
