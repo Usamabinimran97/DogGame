@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using StarterAssets;
 using UnityEngine;
+using UnityEngine.AI;
 using UnityEngine.SceneManagement;
 using UnityEngine.Serialization;
 
@@ -10,10 +11,10 @@ public class LevelManager : MonoBehaviour
     public static int hidrantCount;
     public List<Levels> levelsList;
     public List<GameObject> levelsListGameObjects;
-    public List<GameObject> fireHydrants;
+    public List<GameObject> fireHydrants, spawnPoints, cameraPoints;
     public StarterAssetsInputs playerInput;
     public float minimumDistance = 5f;
-    public Transform player;
+    public Transform player, dogTransform, cameraTransform;
     public DogFollow dogFollow;
     [FormerlySerializedAs("_dogOffset")] public Vector3 dogOffset;
     public static LevelManager Instance;
@@ -25,6 +26,7 @@ public class LevelManager : MonoBehaviour
        {
            if (Instance == null)
                Instance = this;
+           
        }
 
        private void Start()
@@ -44,6 +46,14 @@ public class LevelManager : MonoBehaviour
            UIManager.Instance.totalHidrant.text = levelsList[_currentLevelNumber].totalHidrentsCount.ToString();
            dogOffset = dogFollow.offset;
            hidrantCount = 0;
+           var number = _currentLevelNumber % spawnPoints.Count;
+           player.position = spawnPoints[number].transform.position;
+           player.rotation = spawnPoints[number].transform.rotation;
+           dogTransform.position = spawnPoints[number].transform.position;
+           dogTransform.rotation = spawnPoints[number].transform.rotation;
+           cameraTransform.transform.position = cameraPoints[number].transform.position;
+           dogTransform.GetComponent<NavMeshAgent>().enabled = true;
+           dogTransform.GetComponent<DogFollow>().enabled = true;
            CountdownTimer.Instance.totalTime += (_currentLevelNumber * 30);
            foreach (var currentObject in fireHydrants)
            {
