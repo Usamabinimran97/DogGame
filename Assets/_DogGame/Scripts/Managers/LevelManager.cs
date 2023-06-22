@@ -91,6 +91,7 @@ public class LevelManager : MonoBehaviour
                _currentLevelNumber++;
                _nextLevelNumber++;   
            }
+           GameManager.Instance.hudCanvas.SetActive(false);
            CountdownTimer.Instance.StopTimer();
            PlayerPrefs.SetInt("LevelNumber", _currentLevelNumber);
        }
@@ -99,6 +100,7 @@ public class LevelManager : MonoBehaviour
        {
            UIManager.Instance.joystick.SetActive(false);
            UIManager.Instance.levelFail.SetActive(true);
+           GameManager.Instance.hudCanvas.SetActive(false);
            var score = PlayerPrefs.GetInt("Bones");
            score += 20;
            PlayerPrefs.SetInt("Bones", score);
