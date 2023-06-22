@@ -17,6 +17,7 @@ public class LevelManager : MonoBehaviour
     public Transform player, dogTransform, cameraTransform;
     public DogFollow dogFollow;
     [FormerlySerializedAs("_dogOffset")] public Vector3 dogOffset;
+    public ParticleSystem peeParticle;
     public static LevelManager Instance;
     public bool levelClear;
     private int _currentLevelNumber, _nextLevelNumber;

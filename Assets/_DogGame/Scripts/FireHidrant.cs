@@ -17,6 +17,7 @@ public class FireHidrant : MonoBehaviour
         _stateInfo = LevelManager.Instance.dogAnimator.GetCurrentAnimatorStateInfo(0);
         _animationTime = _stateInfo.normalizedTime * _stateInfo.length;
         LevelManager.Instance.dogFollow.offset = new Vector3(-1, 0, 0);
+        LevelManager.Instance.peeParticle.Play();
         StartCoroutine(WaitTillAnimation(_animationTime));
         LevelManager.Instance.playerInput.move = Vector2.zero;
         
@@ -30,6 +31,7 @@ public class FireHidrant : MonoBehaviour
         LevelManager.Instance.OnLevelClear();
         UIManager.Instance.joystick.SetActive(!LevelManager.Instance.levelClear);
         LevelManager.Instance.dogFollow.offset = LevelManager.Instance.dogOffset;
+        LevelManager.Instance.peeParticle.Stop();
         LevelManager.Instance.dogAnimator.SetBool(Pee, false);
         transform.GetComponent<BoxCollider>().enabled = false;
         transform.GetComponent<HUDNavigationElement>().enabled = false;
