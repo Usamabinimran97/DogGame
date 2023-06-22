@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using StarterAssets;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Serialization;
 
 public class LevelManager : MonoBehaviour
 {
@@ -14,6 +15,8 @@ public class LevelManager : MonoBehaviour
     public StarterAssetsInputs playerInput;
     public float minimumDistance = 5f;
     public Transform player;
+    public DogFollow dogFollow;
+    [FormerlySerializedAs("_dogOffset")] public Vector3 dogOffset;
     public static LevelManager Instance;
     private int _currentLevelNumber, _nextLevelNumber;
     private static readonly int Walk = Animator.StringToHash("Walk");
@@ -39,7 +42,8 @@ public class LevelManager : MonoBehaviour
            }
            levelsListGameObjects[_currentLevelNumber].SetActive(true);
            UIManager.Instance.totalHidrant.text = levelsList[_currentLevelNumber].totalHidrentsCount.ToString();
-           
+           dogOffset = dogFollow.offset;
+           hidrantCount = 0;
            foreach (var currentObject in fireHydrants)
            {
                // Calculate the distance between the player and the object
@@ -49,6 +53,8 @@ public class LevelManager : MonoBehaviour
                // Enable the object
                currentObject.SetActive(distance < minimumDistance);
            }
+           
+           
        }
 
        private void Update()
