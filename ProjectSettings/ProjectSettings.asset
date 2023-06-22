@@ -823,11 +823,11 @@ PlayerSettings:
     m_VersionName: 
   apiCompatibilityLevel: 6
   activeInputHandler: 2
-  cloudProjectId: 
+  cloudProjectId: f54148a6-4ae5-47db-a8be-e88c3015a83c
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: 
-  organizationId: 
+  projectName: DogWalker
+  organizationId: feed23
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   playerDataPath: 
