@@ -71,14 +71,16 @@ public class FireHidrant : MonoBehaviour
         var position = LevelManager.Instance.dogTransform.position;
         var direction = _target.position - position;
 
+        if(direction.magnitude<=1) return;
         // Normalize the direction to get a unit vector
         direction.Normalize();
-        
+
+        position += offset;
         // Calculate the new position for the dog using Lerp
         var newPosition = position + direction * speed * Time.deltaTime;
 
         // Move the dog towards the new position using Lerp
-        position = Vector3.Lerp(position, newPosition + offset, speed * Time.deltaTime);
+        position = Vector3.Lerp(position, newPosition, speed * Time.deltaTime);
         LevelManager.Instance.dogTransform.rotation = transform.rotation;
         LevelManager.Instance.dogTransform.position = position;
     }
