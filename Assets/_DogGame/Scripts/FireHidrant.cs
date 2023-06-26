@@ -14,6 +14,7 @@ public class FireHidrant : MonoBehaviour
     private bool _isTrue;
     
     public float speed = 2f; // Speed at which the dog moves towards the trigger
+    public Vector3 offset;
 
     private void Start()
     {
@@ -73,6 +74,7 @@ public class FireHidrant : MonoBehaviour
         // Normalize the direction to get a unit vector
         direction.Normalize();
 
+        position += offset;
         // Calculate the new position for the dog using Lerp
         var newPosition = position + direction * speed * Time.deltaTime;
 
