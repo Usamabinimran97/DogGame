@@ -969,7 +969,6 @@ IL2CPP_EXTERN_C String_t* _stringLiteralAFCB38F037F5FFD9195B0826F7AEE82373DE4539
 IL2CPP_EXTERN_C String_t* _stringLiteralB23C3717573626FB4C3C7DF5C19EDE7689837214;
 IL2CPP_EXTERN_C String_t* _stringLiteralB66675F93A6A20ACB388AE8532C631EC1E332DE7;
 IL2CPP_EXTERN_C String_t* _stringLiteralB906ADFCFBB8A36483996B52CF89088F734C4F4D;
-IL2CPP_EXTERN_C String_t* _stringLiteralB9981397C8CCB1CECB3F6604448AA05EEBE40D15;
 IL2CPP_EXTERN_C String_t* _stringLiteralBE366367D51604664E583627481FA7D3466CA756;
 IL2CPP_EXTERN_C String_t* _stringLiteralBFC9251F5D9686DFC6AAC09A63649AFAC3130381;
 IL2CPP_EXTERN_C String_t* _stringLiteralC15C2D6947DEDE9FABF17FE521B3593922B4FEA0;
@@ -24554,15 +24553,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LevelManager_OnNextButtonPressed_m436B5C
 	if (!s_Il2CppMethodInitialized)
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SceneManager_tA0EF56A88ACA4A15731AF7FDC10A869FA4C698FA_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralB9981397C8CCB1CECB3F6604448AA05EEBE40D15);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralBFC9251F5D9686DFC6AAC09A63649AFAC3130381);
 		s_Il2CppMethodInitialized = true;
 	}
 	{
 		// levelClear = false;
 		__this->___levelClear_20 = (bool)0;
-		// SceneManager.LoadScene("_DogGame/Scenes/Gameplay");
+		// SceneManager.LoadScene("_DogGame/Scenes/Art_Fixed");
 		il2cpp_codegen_runtime_class_init_inline(SceneManager_tA0EF56A88ACA4A15731AF7FDC10A869FA4C698FA_il2cpp_TypeInfo_var);
-		SceneManager_LoadScene_m7237839058F581BFCA0A79BB96F6F931469E43CF(_stringLiteralB9981397C8CCB1CECB3F6604448AA05EEBE40D15, NULL);
+		SceneManager_LoadScene_m7237839058F581BFCA0A79BB96F6F931469E43CF(_stringLiteralBFC9251F5D9686DFC6AAC09A63649AFAC3130381, NULL);
 		// }
 		return;
 	}
@@ -24574,13 +24573,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LevelManager_OnRestartButtonPressed_m90F
 	if (!s_Il2CppMethodInitialized)
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SceneManager_tA0EF56A88ACA4A15731AF7FDC10A869FA4C698FA_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralB9981397C8CCB1CECB3F6604448AA05EEBE40D15);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralBFC9251F5D9686DFC6AAC09A63649AFAC3130381);
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// SceneManager.LoadScene("_DogGame/Scenes/Gameplay");
+		// SceneManager.LoadScene("_DogGame/Scenes/Art_Fixed");
 		il2cpp_codegen_runtime_class_init_inline(SceneManager_tA0EF56A88ACA4A15731AF7FDC10A869FA4C698FA_il2cpp_TypeInfo_var);
-		SceneManager_LoadScene_m7237839058F581BFCA0A79BB96F6F931469E43CF(_stringLiteralB9981397C8CCB1CECB3F6604448AA05EEBE40D15, NULL);
+		SceneManager_LoadScene_m7237839058F581BFCA0A79BB96F6F931469E43CF(_stringLiteralBFC9251F5D9686DFC6AAC09A63649AFAC3130381, NULL);
 		// }
 		return;
 	}

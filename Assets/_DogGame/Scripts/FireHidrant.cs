@@ -29,6 +29,7 @@ public class FireHidrant : MonoBehaviour
         LevelManager.Instance.dogAnimator.SetBool(Pee, true);
         _stateInfo = LevelManager.Instance.dogAnimator.GetCurrentAnimatorStateInfo(0);
         _animationTime = _stateInfo.normalizedTime * _stateInfo.length;
+        _target = transform;
         LevelManager.Instance.dogTransform.GetComponent<NavMeshAgent>().enabled = false;
         LevelManager.Instance.dogTransform.GetComponent<DogFollow>().enabled = false;
         LevelManager.Instance.dogFollow.offset = new Vector3(-1, 0, 0);
@@ -75,7 +76,7 @@ public class FireHidrant : MonoBehaviour
         // Normalize the direction to get a unit vector
         direction.Normalize();
 
-        position += offset;
+        //position += offset;
         // Calculate the new position for the dog using Lerp
         var newPosition = position + direction * speed * Time.deltaTime;
 
