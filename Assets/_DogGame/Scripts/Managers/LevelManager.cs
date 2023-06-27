@@ -48,11 +48,11 @@ public class LevelManager : MonoBehaviour
            dogOffset = dogFollow.offset;
            hidrantCount = 0;
            var number = _currentLevelNumber % spawnPoints.Count;
-           player.position = spawnPoints[number].transform.position;
+           /*player.position = spawnPoints[number].transform.position;
            player.rotation = spawnPoints[number].transform.rotation;
            dogTransform.position = spawnPoints[number].transform.position;
            dogTransform.rotation = spawnPoints[number].transform.rotation;
-           cameraTransform.transform.position = cameraPoints[number].transform.position;
+           cameraTransform.transform.position = cameraPoints[number].transform.position;*/
            dogTransform.GetComponent<NavMeshAgent>().enabled = true;
            dogTransform.GetComponent<DogFollow>().enabled = true;
            CountdownTimer.Instance.totalTime += (_currentLevelNumber * 30);
