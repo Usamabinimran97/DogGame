@@ -120,11 +120,11 @@ public class LevelManager : MonoBehaviour
        public void OnNextButtonPressed()
        {
            levelClear = false;
-           SceneManager.LoadScene("_DogGame/Scenes/Gameplay");
+           SceneManager.LoadScene("_DogGame/Scenes/Art_Fixed");
        }
        
        public void OnRestartButtonPressed()
        {
-           SceneManager.LoadScene("_DogGame/Scenes/Gameplay");
+           SceneManager.LoadScene("_DogGame/Scenes/Art_Fixed");
        }
 }

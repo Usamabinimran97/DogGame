@@ -11,8 +11,11 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_DogGame/Scenes/MainMenu.unity
     guid: b3cc2553caf00a34a8409e3a557db255
-  - enabled: 1
+  - enabled: 0
     path: Assets/_DogGame/Scenes/Gameplay.unity
     guid: ace58ca5aad97754fae3fda468322597
+  - enabled: 1
+    path: Assets/_DogGame/Scenes/Art_Fixed.unity
+    guid: 06039ed47429ba3459a4d8e859fac067
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 9e7be553448fa2546aea5752021cbcf7, type: 2}
