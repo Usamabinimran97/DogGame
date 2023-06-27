@@ -69,6 +69,6 @@ public class MainMenu : MonoBehaviour
     public void OnStartButtonPressed()
     {
         loading.SetActive(true);
-        SceneManager.LoadScene("_DogGame/Scenes/Gameplay");
+        SceneManager.LoadScene("_DogGame/Scenes/Art_Fixed");
     }
 }

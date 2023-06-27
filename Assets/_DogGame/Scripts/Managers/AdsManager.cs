@@ -52,7 +52,7 @@ public class AdsManager : MonoBehaviour, IUnityAdsInitializationListener, IUnity
 #elif UNITY_ANDROID
         _gameId = androidGameId;
 #elif UNITY_EDITOR
-            _gameId = _androidGameId; //Only for testing the functionality in the Editor
+            _gameId = androidGameId; //Only for testing the functionality in the Editor
 #endif
         if (!Advertisement.isInitialized && Advertisement.isSupported)
         {
